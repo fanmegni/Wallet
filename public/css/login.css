@@ -1,0 +1,57 @@
+body{
+    flex-direction: column;
+    height: 100%;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    height: 40%;
+    width: 90%;
+    background-color: black;
+}
+
+form{
+    width: 55%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    display: none;
+}
+
+input{
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 30%;
+    height: 10%;
+    padding-left: 2%;
+    margin-bottom: 2%;
+}
+
+button{
+    border: 3px solid #2884FF;
+    border-radius: 5px;
+    width: 33%;
+    height: 10%;
+    color: white;
+    background-color: #2884FF;
+}
+
+::placeholder{
+    margin-left: 2px;
+}
+
+form div{
+    display: none;
+}

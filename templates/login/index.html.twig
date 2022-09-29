@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ asset("css/login.css") }}">
+    <title>Connexion</title>
+</head>
+<body>
+    {{ include('header.html.twig') }}
+
+    <section>
+        <form action="{{ path('app_login') }}" method="post">
+                <label for="username">Email:</label>
+                <input type="text" id="username" name="_username" value="{{ last_username }}" placeholder="Nom d'utilisateur"/>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="_password" placeholder="Mot de passe"/>
+            <input type="hidden" name="_target_path" value="/dashboard"/>
+            <button type="submit">Se connecter</button>
+        </form>
+    </section>
+</body>
+</html>
+
+
