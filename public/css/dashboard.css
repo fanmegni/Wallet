@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+#menu{
+    background-color: #2884FF;
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    height: 100%;
+    align-items: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    width: fit-content  ;
+}
+
+a:active{
+    text-decoration: none;
+}
+
+#head{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 10%;
+}
+
+#head img{
+    width: 25%;
+    height: auto;
+    margin-right: 10px;
+}
+
+#head a{
+    font-size: xx-large;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    position: relative;
+}
+
+#navigation{
+    top: 20%;
+    left: 20%;
+    position: absolute;
+    width: fit-content;
+}
+
+#logout{
+    bottom: 5%;
+    width: 80%;
+    font-size: initial;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+}
+
+#logout > img{
+    width: 10%;
+    height: auto;
+}
+
+#navigation > .link{
+    margin-bottom: 20%;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 1%;
+    font-size: large ;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.link > img{
+    width: 15%;
+    height: auto;
+    margin-right: 10px;
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ asset("css/dashboard.css") }}">
+    <title>Tableau de Bord</title>
+</head>
+<body>
+    <div id="menu">
+        <div id="head">
+            <img src="{{ asset("images/blue_wallet.png") }}" alt="brand icon">
+            <a href="{{ path('app_dashboard') }}">Wallet</a>
+        </div>
+        <div id="navigation" >
+            <div id="expenses" class="link">
+                <img src="{{ asset("images/dash.png") }}" alt="brand icon">
+                <a href="{{ path('app_expense') }}">Dépenses</a>
+            </div>
+            <div id="profile" class="link">
+                <img src="{{ asset("images/profile.png") }}" alt="brand icon">
+                <a href="{{ path('app_profile') }}">Profil</a>
+            </div>
+        </div>
+        <div id="logout" class="link">
+            <img src="{{ asset("images/logout.png") }}" alt="brand icon">
+            <a href="">Se déconnecter</a>
+        </div>
+    </div>
+</body>
+</html>
