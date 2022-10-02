@@ -45,7 +45,7 @@ class ExpenseController extends AbstractController
             $entityManager->persist($expense);
             $entityManager->flush();
 
-            $this->redirectToRoute('/expense');
+            $this->redirectToRoute('app_expense');
         }
 
         return $this->renderForm('expense/add.html.twig',[
@@ -70,7 +70,7 @@ class ExpenseController extends AbstractController
             $doctrine->getManager()->persist($nExpense);
             $doctrine->getManager()->flush();
 
-            $this->redirectToRoute('/expense');
+            $this->redirectToRoute('app_expense');
         }
         return $this->renderForm('expense/edit.html.twig',[
             'expense' => $expense
@@ -84,6 +84,6 @@ class ExpenseController extends AbstractController
             $managerRegistry->getManager()->remove($expense);
             $managerRegistry->getManager()->flush();
         }
-        $this->redirectToRoute("/expense");
+        $this->redirectToRoute("app_expense");
     }
 }
